@@ -1,0 +1,10 @@
+[Unit]
+Description=Honeypot
+
+[Service]
+ExecStart=/bin/bash /opt/honeypot/run.sh
+Start=on-failure
+
+
+[Install]
+WantedBy=multi-user.target
